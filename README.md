@@ -178,9 +178,3 @@ Relevant frontend files
 - Ensure the DB is migrated and seeded before starting the backend if using a fresh DB.
 
 ---
-
-If you want, I can:
-
-- add example curl commands for each endpoint,
-- update package.json scripts to standardize `dev` commands, or
-- create a `docker-compose` to run the stack.
