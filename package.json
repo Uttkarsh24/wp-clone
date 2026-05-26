@@ -1,0 +1,17 @@
+{
+  "name": "wp-clone",
+  "version": "1.0.0",
+  "description": "WordPress Clone CMS using React, Express, and Prisma",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install --legacy-peer-deps && npm install --prefix backend --legacy-peer-deps && npm install --prefix frontend --legacy-peer-deps",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build --prefix frontend",
+    "prisma:generate": "npm run prisma:generate --prefix backend",
+    "prisma:migrate": "npm run prisma:migrate --prefix backend",
+    "prisma:seed": "npm run prisma:seed --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
